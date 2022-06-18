@@ -4,5 +4,15 @@ from imageRead import Image as im
 
 class DataGeneration:
 
-    def __init__(self) -> None:
-        pass
+        def createDataset(self,data_dir):
+            """A method to create features and labels for our model
+
+            Args:
+                data_dir (String): Path to our root directory
+
+            Returns:
+                tuple: A tuple which returns features and labels
+            """
+            features = [] # An empty list to append all the features
+            labels = [] # An empty list to append all the labels
+            return features,labels
