@@ -30,7 +30,7 @@ class DataGeneration:
                         resize_image = im.downScale(image)
                         self.features.append(resize_image)
                         self.labels.append(folder)
-            print(f'************* Data extraction for {folder} completed *************')
+            print(f'------------ Data extraction for {folder} completed ------------')
         print(f'Data extraction completed')
     
     def convertToNumpyArray(self):
@@ -41,7 +41,7 @@ class DataGeneration:
         self.createDataset()
         return np.asarray(self.features),np.asarray(self.labels)
 
-if __name__ == '__main__':
+'''if __name__ == '__main__':
     dc = DataGeneration('../data/')
     a,b = dc.convertToNumpyArray()
-    print(type(a),type(b))
+    print(type(a),type(b))'''
